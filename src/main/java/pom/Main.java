@@ -1,7 +1,23 @@
 package pom;
 
-public class Main {
+import java.util.*;
+
+public class Main extends Human {
     public static void main(String[] args) {
-        System.out.println("Hello world!");
     }
+
+
+    @Override
+    public void print() {
+
+    }
+}
+
+abstract class Human implements House {
+    public void scan() {
+    }
+}
+
+interface House {
+    void print();
 }

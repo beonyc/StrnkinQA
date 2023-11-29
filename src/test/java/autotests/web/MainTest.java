@@ -27,5 +27,6 @@ class MainTest extends BaseTest {
         $$(".ti-user").filterBy(visible).get(0).click();
         logInPage.logIn(login, password);
         $(".alert.alert-danger").shouldBe(visible).shouldHave(text("Ошибка"));
+        //develop
     }
 }
